@@ -19,8 +19,8 @@ export function PricingClient() {
   const PLANS = [
     {
       name: t("pricing.starter.name"),
-      monthly: "৳29",
-      yearly: "৳290",
+      monthly: "৳2900",
+      yearly: "৳2900",
       yearlyNote: "$24/mo billed yearly",
       description: t("pricing.starter.description"),
       features: [
@@ -34,8 +34,8 @@ export function PricingClient() {
     },
     {
       name: t("pricing.growth.name"),
-      monthly: "৳79",
-      yearly: "৳790",
+      monthly: "৳7900",
+      yearly: "৳7900",
       yearlyNote: t("pricing.growth.note"),
       description: t("pricing.growth.description"),
       features: [
@@ -74,7 +74,7 @@ export function PricingClient() {
 
   return (
     <div>
-      <section className="bg-background px-5 py-14 transition-colors sm:px-8 sm:py-20">
+      <section className="bg-background px-5 py-8 transition-colors sm:px-8 ">
         <div className="mx-auto max-w-7xl">
           {/* Header */}
           <motion.div
@@ -86,10 +86,9 @@ export function PricingClient() {
             <span className="chip-kinetic">{t("pricing.badge")}</span>
             <AnimatedHeading
               text={t("pricing.title")}
-              as="h1"
-              className="mt-4 font-serif text-3xl font-semibold tracking-tight text-foreground sm:text-4xl"
+              className="font-serif text-3xl font-semibold tracking-tight text-foreground sm:text-4xl"
             />
-            <p className="mt-4 text-[15px] leading-relaxed text-muted-foreground">
+            <p className=" text-[15px]  text-muted-foreground">
               {t("pricing.description")}
             </p>
           </motion.div>

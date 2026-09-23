@@ -6,22 +6,23 @@ import { Mail, MapPin, Phone, CheckCircle2 } from "lucide-react";
 import { SiteShell } from "@/components/site/SiteNav";
 import { useLanguage } from "@/lib/language";
 import { AnimatedHeading } from "@/components/home/animated-heading";
+import LocationMapSection from "@/components/contract/LocationMapSection";
 
 const INFO_ITEMS = [
   {
     icon: MapPin,
     labelKey: "contact.addressLabel",
-    valueKey: "contact.address",
+    valueKey: "H-417, R-7, Baridhara DOHS, Dhaka-1206",
   },
   {
     icon: Mail,
     labelKey: "contact.emailLabel",
-    valueKey: "contact.email",
+    valueKey: "fleekbangladesh@gmail.com",
   },
   {
     icon: Phone,
     labelKey: "contact.phoneLabel",
-    valueKey: "contact.phone",
+    valueKey: "+8801897-621270",
   },
 ] as const;
 
@@ -47,7 +48,7 @@ function ContactContent() {
   };
 
   return (
-    <section className="min-h-screen bg-background px-5 py-14 sm:px-8 sm:py-20">
+    <section className=" bg-background px-5 py-14 sm:px-8">
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-14 lg:grid-cols-[1fr_1.2fr]">
         {/* Contact Information */}
         <div>
@@ -277,6 +278,7 @@ export default function ContactPage() {
   return (
     <SiteShell>
       <ContactContent />
+      <LocationMapSection/>
     </SiteShell>
   );
 }
